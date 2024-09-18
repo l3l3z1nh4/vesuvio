@@ -1,0 +1,262 @@
+/*Paleta
+#632E29
+#A08F79
+#302E2C
+#555F4C
+#f4f4f4*/
+
+body{
+    background-color:#632E29 ;
+}
+p{
+    font-weight: 350;
+}
+header{
+    z-index: 1;
+}
+#logo{
+    width: 70%;
+    margin-left: -1.5em;
+}
+.navbar{
+    background-color: #555F4C;
+    color: #f4f4f4;
+    --bs-navbar-color: #f4f4f43f;
+    text-align: end;
+}
+.nav .nav-link.active{
+    background-color: #555F4C;
+    color: #f4f4f4;
+    font-weight: 600;
+}
+.nav .nav-link{
+    color: #f4f4f4;
+    font-family: "Adamina", cursive;
+}
+.navbar-toggler{
+    background-color: #f4f4f4;
+}
+#toldo{
+    position: fixed;
+    margin-top: -0.8em;
+    z-index: 1;
+}
+
+/*section sobre*/
+#sobre{
+    height: 100vb;
+    align-content: center;
+    margin-top: 2em;
+}
+#container-sobre{
+    align-items: center;
+}
+#col-texto-sobre{
+    align-content: center;
+}
+#texto-sobre{
+    align-content: center;
+}
+ul {
+    padding-left: 0rem;
+    text-align: left;
+}
+#social-links li{
+    list-style: none;
+    display: inline;
+}
+#social-links li a{
+    text-decoration:none;
+}
+#endereco p{
+    font-weight: bold;
+}
+
+/*section cardapio*/
+#cardapio{
+    margin-bottom: 4em;
+    align-content: start;
+}
+.descricao-cardapio{
+    font-size: smaller;
+}
+
+/*section reserva*/
+#form-reserva button{
+    margin-top: 1em;
+    color: #f4f4f4;
+    font-style: italic;
+    border-radius: 0.5em;
+    border: solid, 0.1em, #f4f4f4;
+    margin-bottom: 1em;
+}
+#form-reserva{
+    max-width: 60vh;
+    min-width: 400px;
+}
+input[type="date"] {
+    display: block;
+    padding: 7px;
+    border: solid, 0.1em, #f4f4f4;
+    border-radius: 0.5em;
+    font-size: 16px;
+    width: 100%;
+}
+input[type="time"] {
+    display: block;
+    padding: 7px;
+    border: solid, 0.1em, #f4f4f4;
+    border-radius: 0.5em;
+    font-size: 16px;
+    width: 100%;
+}
+
+/*section avaliações*/
+#accordion-avaliacoes{
+    text-align: center;
+    max-width: 70vh;
+    min-width: 400px;
+}
+.accordion-button{
+    background-color: #555F4C;
+    border-radius: 1em;
+    --bs-accordion-btn-focus-box-shadow:transparent;
+}
+.accordion-button:not(.collapsed){
+    background-color: #555F4C;
+    box-shadow: none;
+}
+#estrelas{
+    max-width: 200px;
+}
+button.accordion-button::after{
+    --bs-accordion-btn-icon: url(/images/icon_collapse.png);
+    --bs-accordion-btn-active-icon: url(/images/icon_collapse.png);
+    z-index: 3;
+}
+button.accordion-button:hover {
+    z-index: 3;
+}
+button.accordion-button:focus{
+    z-index: 3;
+}
+
+/*footer */
+footer{
+    font-size: 1em;
+    background-color: #302E2C;
+    color: #f4f4f4;
+    font-style: italic;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    margin-bottom: -1em;
+}
+footer a{
+    font-weight: 400;
+    color: #f4f4f4;
+}
+
+
+/*class*/
+.container{
+    text-align: center;
+}
+.section-title{
+    font-family: "Meie Script", cursive;
+    color: #f4f4f4;
+    font-size: 1.5em;
+    font-style: italic;
+}
+.text-colored-green{
+    color: #555F4C;
+}
+.text-colored-cream{
+    color:#f4f4f4;
+}
+.text-justify{
+    text-align: justify;
+}
+.carousel-indicators{
+    z-index: 0;
+}
+.font-carattere{
+    font-family: 'Carattere';
+    font-weight: 400;
+    padding-right: 0.1em;
+}
+.font-meie{
+    font-family: 'Meie Script';
+    font-weight: 400;
+    font-style: italic;
+}
+.font-adamina{
+    font-family: 'Adamina';
+    font-style: normal;
+    font-weight: 400;
+}
+.child{
+    margin: 0 auto;
+}
+.centralizar{
+    display: flex;
+    justify-content: center;
+}
+.text-align-left{
+    text-align: left;
+}
+
+
+/*TABLET*/
+@media screen  and (min-width: 768px)and (max-width:992px){
+    .carousel-inner{
+        height: 100vh;
+    }
+    .carousel-inner{
+        height: 100vh;
+    }
+    .carousel-item{
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .carousel-item img{
+        height: 100%;
+        object-fit: cover; 
+        
+    }
+    .tab-content{
+    padding-left: 2em;
+    }
+
+}
+
+/*CELULAR*/
+@media screen and (max-width: 767px){
+    .carousel-inner{
+        height: 100vh;
+    }
+    .carousel-inner{
+        height: 100vh;
+    }
+    .carousel-item{
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .carousel-item img{
+        height: 100%;
+        object-fit: cover; 
+        
+    }
+    #texto-sobre{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    #cardapio{
+        margin-top: 10em ;
+    }
+    .tab-content{
+        margin-top: 2em;
+    }
+}

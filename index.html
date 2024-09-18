@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesuvio</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Meie+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favcon.png" type="image/x-icon">
+</head>
+<body>
+    <!--INICIO: cabeçalho-->
+    <header class="navbar navbar-expand-lg sticky-top pt-4 pb-4" id="cabecalho">
+        <div class="container">
+            <a href="#home">
+                <img src="/images/logo.png" alt="logo vesuvio" id="logo">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end mt-3  " id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex ">
+                    <li class="nav-item justify-content-end ">
+                        <a class="nav-link " href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cardapio">Cardápio</a>
+                    </li>
+                    <li >
+                        <a class="nav-link" href="#reserva">Resevas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div><img src="/images/toldo.png" alt="" id="toldo"></div>
+    <!--FIM: cabeçalho-->
+
+    <!--INICIO: conteudo-->
+    <div id="content" data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <!--INICIO: home-->
+        <section id="home">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel-home">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/images/slides/1.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/slides/2.jpg" alt="" class="w-100" >
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/images/slides/4.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-home" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-home" data-bs-slide-to= "0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel-home" data-bs-slide-to= "1"></button>
+                    <button type="button" data-bs-target="#carousel-home" data-bs-slide-to= "2"></button>
+                </div>
+            </div>
+        </section>
+        <!--FIM: home-->
+        <!--INICIO: sobre-->
+        <section id="sobre">
+            <div class="pt-5 pb-5" id="container-sobre">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 " id="col-texto-sobre">
+                            <img src="/images/faixada.jpg" class=" w-100 rounded" alt="Foto do Restaurante">
+                        </div>
+                        <div class="col-md-6 mt-3 mt-md-0" id="texto-sobre">
+                            <div class="text-colored-cream text-justify">
+                                <h2 class="font-meie"><span class="font-carattere">S</span>obre o <span class="font-carattere">R</span>estaurante</h2>
+                                <p class="text-justify">Com uma decoração que evoca o estilo clássico e acolhedor da Itália, o ambiente do Vesuvio é sofisticado e convidativo. </p>
+                                <p class="text-justify">O cardápio oferece uma ampla variedade de pratos italianos autênticos, preparados com ingredientes frescos e de alta qualidade. Desde massas artesanais e risotos deliciosos até uma seleção de carnes e frutos do mar, cada prato é preparado com cuidado e atenção aos detalhes. </p>
+                                <p class="text-justify">Seja para uma refeição casual ou uma ocasião especial, o Vesuvio é conhecido por sua hospitalidade calorosa e pratos deliciosos, criando uma experiência autêntica e agradável para todos os que o visitam.</p>
+                            </div>
+                            <div class="d-flex text-colored-cream pt-4" id="endereco">
+                                <i class="bi bi-geo-alt-fill me-2"></i><p>439 East Rutherford, New Jersey - USA</p>
+                            </div>
+                            <ul id="social-links">
+                                <li class="p-0">
+                                    <a href="#">
+                                        <i class="bi bi-instagram fs-4 text-colored-cream"></i>
+                                    </a>
+                                    </li>
+                                <li class="ms-2 me-2">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp fs-4 text-colored-cream"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-twitter fs-4 text-colored-cream"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FIM: sobre-->
+        <!--INICIO: cardapio-->
+        <section id="cardapio">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-colored-cream font-meie text-center mb-4"><span class="font-carattere">N</span>osso <span class="font-carattere">C</span>ardápio</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column" id="nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entrada" class="nav-link text-start active">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos" class="nav-link text-start ">Pratos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="nav-link text-start ">Bebidas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#drink" class="nav-link text-start ">Drinks</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="nav-link text-start ">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="entrada">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/entradas/brusqueta.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Bruschetta</h5>
+                                        <p class="descricao-cardapio">Fatias de pão italiano tostadas e cobertas com uma mistura de tomates frescos, manjericão, alho e azeite.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/entradas/salada caprese.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Salada Caprese</h5>
+                                        <p class="descricao-cardapio">Salada de tomate, mozzarella e manjericão, regada com azeite e balsâmico.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/entradas/Arancini.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Arancini</h5>
+                                        <p class="descricao-cardapio">Bolinhos de risoto empanados e fritos, recheados com queijo, crocante por fora e cremoso por dentro.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/entradas/crostini parmesao.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Crostini</h5>
+                                        <p class="descricao-cardapio">Pequenos pedaços de massa de parmesõa tostados servidos com patê de azeitona.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/spaghetti.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Spaghetti a Bolonhesa</h5>
+                                        <p class="descricao-cardapio">Massa ao molho de carne moída, tomate, vinho tinto e vegetais,finalizada com queijo parmesão ralado.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/carbonara.png " class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Spaghetti Carbonara</h5>
+                                        <p class="descricao-cardapio">Massa longa com molho cremoso de ovos, queijo parmesão, pancetta e pimenta preta.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/lasagna.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Lasagna</h5>
+                                        <p class="descricao-cardapio">Camadas de massa intercaladas com molho de carne, molho bechamel e queijo..</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/pizza.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Pizza Margherita</h5>
+                                        <p class="descricao-cardapio">Pizza de massa fina com molho de tomate, mozzarella e manjericão fresco.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/Ratatouille.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Ratatouille</h5>
+                                        <p class="descricao-cardapio">Prato de legumes assados como berinjela, abobrinha e pimentão, temperado com ervas.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/Risotto al Funghi.png " class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Risotto al Funghi</h5>
+                                        <p class="descricao-cardapio">Arroz cremoso cozido com cogumelos e caldo, finalizado com queijo parmesão.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/ossobuco.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Osso Buco </h5>
+                                        <p class="descricao-cardapio">Coxas de vitelo cozidas lentamente com vinho branco, caldo de carne e vegetais, servidas com gremolata.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/pratos/pesto.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Pesto alla Genovese</h5>
+                                        <p class="descricao-cardapio">Molho fresco de manjericão, pinhões, queijo parmesão, alho e azeite, servido com pasta do dia.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>   
+                            <div class="tab-pane" id="bebidas">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/bebidas/sucos.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Sucos</h5>
+                                        <p class="descricao-cardapio">Sabores: laranja, limão, maracuja, melancia e abacaxi.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/bebidas/soda italiana.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Soda Italiana</h5>
+                                        <p class="descricao-cardapio">Sabores: limão, laranja e framboesa.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/bebidas/refrigerantes.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Refrigerantes</h5>
+                                        <p class="descricao-cardapio">Coca-Cola, Soda, Guaraná e H20</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/bebidas/agua.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Água</h5>
+                                        <p class="descricao-cardapio">Tônica, com gás e sem gás.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="drink">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/drinks/aperol spritz.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Aperol Spritz</h5>
+                                        <p class="descricao-cardapio">Refrescante mistura de Aperol, espumante e um splash de água com gás, servido com uma fatia de laranja.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/drinks/limonccelo.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Limoncello</h5>
+                                        <p class="descricao-cardapio"> Licor de limão típico da região da Campânia.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/drinks/negroni.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Negroni:</h5>
+                                        <p class="descricao-cardapio">Coquetel clássico feito com gin, vermute vermelho e Campari, servido com uma fatia de laranja.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/drinks/vinhos.webp.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Vinhos</h5>
+                                        <p class="descricao-cardapio">Consultar carta de vinhos diponíveis na casa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/sobremesas/cannoli.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Cannoli</h5>
+                                        <p class="descricao-cardapio">Tubos de massa crocante recheados com um creme doce de ricota</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/sobremesas/panacotta.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Panacota</h5>
+                                        <p class="descricao-cardapio"> Sobremesa cremosa feita de creme, açúcar e gelatina, servida com frutas vermelhas ou caramelo</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/sobremesas/Tiramisu.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Tiramisu</h5>
+                                        <p class="descricao-cardapio"> Camadas de biscoitos embebidos em café, intercaladas com uma mistura cremosa de mascarpone e cacau.</p>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <img src="/images/cardapio/sobremesas/gelato.png" class="display-block w-100" alt="prato de comida">
+                                        <h5 class="section-title mt-3">Gelato</h5>
+                                        <p class="descricao-cardapio">Sorvete italiano denso e cremoso, disponível em uma variedade de sabores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FIM: cardapio-->
+
+        <!--INICIO: avaliações-->
+        <section id="avaliacoes">
+            <div class="container">
+                <h2 class="section-title text-center ">Avaliações</h2>
+                <div class="accordion child mb-5" id="accordion-avaliacoes">
+                    <div class="accordion item ">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#avaliacoes-collapse">
+                            <img src="/images/avaliações/5_estrelas.png" alt="" id="estrelas">
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="avaliacoes-collapse">
+                        <img src="/images/avaliações/Tony_Soprano_avaliaçao.png" alt="avaliação 1" class="w-100">
+                        <img src="/images/avaliações/Adriana_Lacerva_avaliaçao.png" alt="avaliação 2" class="w-100">
+                        <img src="/images/avaliações/Benny_Fazio_avaliaçao.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FIM: avaliações-->
+                <!--INICIO: reserva-->
+                <section id="reserva">
+                    <h2 class="font-meie text-colored-cream centralizar  "><span class="font-carattere ">F</span>aça sua <span class="font-carattere ms-2"> R</span>eserva</h2>
+                    <div class="container centralizar ">
+                            <form id="form-reserva" >
+                                <div class="mb-2">
+                                    <label for="nome" class="form-label text-colored-cream text-align-left d-block">Nome</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="celular" class="form-label text-colored-cream text-align-left d-block">Celular</label>
+                                    <input type="tel" id="celular" class="form-control" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="email" class="form-label text-colored-cream text-align-left d-block">Email</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="n-mesa" class="form-label text-colored-cream text-align-left d-block">Mesa para</label>
+                                    <input type="number" id="n-mesa" class="form-control" required max="12">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="date" class="form-label text-colored-cream text-align-left d-block">Dia</label>
+                                    <input type="date" id="date" name="date" required class="form-control">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="time" class="form-label text-colored-cream text-align-left d-block">Horário</label>
+                                    <input type="time" id="time" name="time" required class="form-control">
+                                </div>
+                                <button type="submit" class="btn">Enviar</button>
+                            </form>
+                    </div>
+                </section>
+                <!--FIM: reserva-->
+    </div>
+    <!--FIM: conteúdo-->
+
+    <footer class="footer">
+        <p>✧ por <a href="https://github.com/l3l3z1nh4" target="_blank">L3L3Z1nH4</a> para EBAC ✧</p>
+    </footer>
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
